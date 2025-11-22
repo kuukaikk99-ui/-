@@ -1,0 +1,41 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Stage 3: ECMOドラゴン - 赤×青の回路×血流エネルギー -->
+  <defs>
+    <linearGradient id="ecmoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a0f;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f0a1a;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="redGlow">
+      <stop offset="0%" style="stop-color:#ff1744;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#ff1744;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="blueGlow">
+      <stop offset="0%" style="stop-color:#00b0ff;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#00b0ff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="url(#ecmoGrad)"/>
+  
+  <!-- 赤い血流回路 -->
+  <path d="M 100,300 Q 400,100 700,300 T 1300,300" stroke="#ff1744" stroke-width="12" fill="none" opacity="0.7">
+    <animate attributeName="stroke-dashoffset" from="0" to="100" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="400" cy="150" r="120" fill="url(#redGlow)" opacity="0.4"/>
+  <circle cx="1000" cy="300" r="150" fill="url(#redGlow)" opacity="0.5"/>
+  
+  <!-- 青い回路ライン -->
+  <path d="M 200,700 Q 500,900 800,700 T 1400,700" stroke="#00b0ff" stroke-width="12" fill="none" opacity="0.7"/>
+  <circle cx="500" cy="850" r="100" fill="url(#blueGlow)" opacity="0.4"/>
+  <circle cx="1100" cy="700" r="130" fill="url(#blueGlow)" opacity="0.5"/>
+  
+  <!-- エネルギーパルス -->
+  <circle cx="700" cy="300" r="30" fill="#ff1744" opacity="0.8"/>
+  <circle cx="800" cy="700" r="30" fill="#00b0ff" opacity="0.8"/>
+  
+  <!-- 回路接続点 -->
+  <rect x="680" y="480" width="40" height="120" fill="#ffffff" opacity="0.3"/>
+  <circle cx="700" cy="490" r="20" fill="#ff1744" opacity="0.9"/>
+  <circle cx="700" cy="590" r="20" fill="#00b0ff" opacity="0.9"/>
+</svg>

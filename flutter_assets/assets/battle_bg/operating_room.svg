@@ -1,0 +1,36 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Stage 2: IABPゴーレム - 緑×黒のグリッド風 -->
+  <defs>
+    <linearGradient id="cathGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="url(#cathGrad)"/>
+  
+  <!-- グリッド線 -->
+  <g stroke="#00ff41" stroke-width="2" opacity="0.3">
+    <line x1="0" y1="200" x2="1920" y2="200"/>
+    <line x1="0" y1="400" x2="1920" y2="400"/>
+    <line x1="0" y1="600" x2="1920" y2="600"/>
+    <line x1="0" y1="800" x2="1920" y2="800"/>
+    <line x1="400" y1="0" x2="400" y2="1080"/>
+    <line x1="800" y1="0" x2="800" y2="1080"/>
+    <line x1="1200" y1="0" x2="1200" y2="1080"/>
+    <line x1="1600" y1="0" x2="1600" y2="1080"/>
+  </g>
+  
+  <!-- カテーテルの軌跡 -->
+  <path d="M 100,100 Q 500,300 900,200 T 1700,400" stroke="#00ff41" stroke-width="4" fill="none" opacity="0.5"/>
+  <path d="M 200,900 Q 600,700 1000,800 T 1800,600" stroke="#00ff41" stroke-width="4" fill="none" opacity="0.5"/>
+  
+  <!-- データポイント -->
+  <circle cx="500" cy="300" r="15" fill="#00ff41" opacity="0.6"/>
+  <circle cx="900" cy="200" r="15" fill="#00ff41" opacity="0.6"/>
+  <circle cx="1300" cy="300" r="15" fill="#00ff41" opacity="0.6"/>
+  
+  <!-- X線の残光エフェクト -->
+  <ellipse cx="960" cy="540" rx="300" ry="200" fill="#00ff41" opacity="0.05"/>
+  <ellipse cx="960" cy="540" rx="200" ry="130" fill="#00ff41" opacity="0.08"/>
+</svg>
