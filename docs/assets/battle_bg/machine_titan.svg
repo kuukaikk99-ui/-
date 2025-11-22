@@ -1,0 +1,47 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Stage 9: 手術支援タイタン - 青×白の手術灯空間 -->
+  <defs>
+    <linearGradient id="titanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#001a33;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#003366;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#001a33;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="spotLight" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#e0f7ff;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#003366;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="url(#titanGrad)"/>
+  
+  <!-- 手術灯のスポットライト（中央） -->
+  <ellipse cx="960" cy="300" rx="350" ry="250" fill="url(#spotLight)"/>
+  
+  <!-- 手術灯のビーム（左） -->
+  <polygon points="400,0 350,540 450,540" fill="#ffffff" opacity="0.3"/>
+  <ellipse cx="400" cy="540" rx="100" ry="80" fill="url(#spotLight)"/>
+  
+  <!-- 手術灯のビーム（右） -->
+  <polygon points="1520,0 1470,540 1570,540" fill="#ffffff" opacity="0.3"/>
+  <ellipse cx="1520" cy="540" rx="100" ry="80" fill="url(#spotLight)"/>
+  
+  <!-- 手術灯のビーム（左奥） -->
+  <polygon points="200,0 170,700 230,700" fill="#ffffff" opacity="0.2"/>
+  <ellipse cx="200" cy="700" rx="70" ry="50" fill="url(#spotLight)" opacity="0.7"/>
+  
+  <!-- 手術灯のビーム（右奥） -->
+  <polygon points="1720,0 1690,700 1750,700" fill="#ffffff" opacity="0.2"/>
+  <ellipse cx="1720" cy="700" rx="70" ry="50" fill="url(#spotLight)" opacity="0.7"/>
+  
+  <!-- タイタンのシルエット（影） -->
+  <ellipse cx="960" cy="900" rx="600" ry="150" fill="#000000" opacity="0.6"/>
+  
+  <!-- 白い光の粒子 -->
+  <circle cx="300" cy="200" r="5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="800" cy="150" r="4" fill="#ffffff" opacity="0.7"/>
+  <circle cx="1200" cy="180" r="6" fill="#ffffff" opacity="0.9"/>
+  <circle cx="1600" cy="220" r="4" fill="#ffffff" opacity="0.7"/>
+  <circle cx="500" cy="350" r="5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="1400" cy="400" r="5" fill="#ffffff" opacity="0.8"/>
+</svg>

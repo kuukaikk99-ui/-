@@ -1,0 +1,36 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Stage 6: 血液浄化フェニックス - 金色×赤の血漿光 -->
+  <defs>
+    <linearGradient id="phoenixGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0f00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2e1a00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a0700;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="goldGlow">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#ffd700;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="url(#phoenixGrad)"/>
+  
+  <!-- 金色の火の粉 -->
+  <circle cx="300" cy="200" r="8" fill="#ffd700" opacity="0.8"/>
+  <circle cx="600" cy="300" r="12" fill="#ffd700" opacity="0.9"/>
+  <circle cx="900" cy="150" r="10" fill="#ffd700" opacity="0.7"/>
+  <circle cx="1200" cy="250" r="15" fill="#ffd700" opacity="0.8"/>
+  <circle cx="1500" cy="180" r="9" fill="#ffd700" opacity="0.9"/>
+  <circle cx="400" cy="600" r="11" fill="#ff8c00" opacity="0.7"/>
+  <circle cx="800" cy="700" r="13" fill="#ff8c00" opacity="0.8"/>
+  <circle cx="1300" cy="650" r="10" fill="#ff8c00" opacity="0.7"/>
+  
+  <!-- 血漿の光 -->
+  <circle cx="960" cy="540" r="300" fill="url(#goldGlow)" opacity="0.4"/>
+  <circle cx="500" cy="350" r="200" fill="url(#goldGlow)" opacity="0.3"/>
+  <circle cx="1400" cy="700" r="250" fill="url(#goldGlow)" opacity="0.3"/>
+  
+  <!-- 赤い炎のアクセント -->
+  <path d="M 960,540 L 960,300" stroke="#ff4444" stroke-width="10" opacity="0.5"/>
+  <path d="M 960,540 L 1160,440" stroke="#ff6644" stroke-width="8" opacity="0.4"/>
+  <path d="M 960,540 L 760,440" stroke="#ff6644" stroke-width="8" opacity="0.4"/>
+</svg>

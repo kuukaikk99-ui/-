@@ -1,0 +1,28 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Stage 4: 人工呼吸ケルベロス - 青×緑の呼吸波形空間 -->
+  <defs>
+    <linearGradient id="ventGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d2e1a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="url(#ventGrad)"/>
+  
+  <!-- 呼吸波形 -->
+  <path d="M 0,300 L 100,300 L 200,200 L 300,400 L 400,300 L 500,300 L 600,200 L 700,400 L 800,300 L 900,300 L 1000,200 L 1100,400 L 1200,300 L 1300,300 L 1400,200 L 1500,400 L 1600,300 L 1700,300 L 1800,200 L 1920,300" 
+        stroke="#00e5ff" stroke-width="6" fill="none" opacity="0.6"/>
+  <path d="M 0,500 L 100,500 L 200,400 L 300,600 L 400,500 L 500,500 L 600,400 L 700,600 L 800,500 L 900,500 L 1000,400 L 1100,600 L 1200,500 L 1300,500 L 1400,400 L 1500,600 L 1600,500 L 1700,500 L 1800,400 L 1920,500" 
+        stroke="#00e676" stroke-width="6" fill="none" opacity="0.5"/>
+  <path d="M 0,700 L 100,700 L 200,600 L 300,800 L 400,700 L 500,700 L 600,600 L 700,800 L 800,700 L 900,700 L 1000,600 L 1100,800 L 1200,700 L 1300,700 L 1400,600 L 1500,800 L 1600,700 L 1700,700 L 1800,600 L 1920,700" 
+        stroke="#00e5ff" stroke-width="6" fill="none" opacity="0.4"/>
+  
+  <!-- 霧エフェクト -->
+  <ellipse cx="400" cy="400" rx="250" ry="150" fill="#00e5ff" opacity="0.08"/>
+  <ellipse cx="1200" cy="600" rx="300" ry="180" fill="#00e676" opacity="0.08"/>
+  <ellipse cx="800" cy="800" rx="200" ry="120" fill="#00e5ff" opacity="0.06"/>
+  
+  <!-- 換気パラメータ表示風 -->
+  <text x="100" y="100" font-family="monospace" font-size="30" fill="#00e5ff" opacity="0.4">TV: 450mL</text>
+  <text x="100" y="150" font-family="monospace" font-size="30" fill="#00e676" opacity="0.4">RR: 16/min</text>
+</svg>
