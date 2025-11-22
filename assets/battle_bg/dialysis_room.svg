@@ -1,0 +1,32 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Stage 1: 透析スライム - 水色×白の流体エフェクト -->
+  <defs>
+    <linearGradient id="dialysisGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00bcd4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4dd0e1;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#b2ebf2;stop-opacity:0.6" />
+    </linearGradient>
+    <radialGradient id="dialysisGlow">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#00bcd4;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="url(#dialysisGrad)"/>
+  
+  <!-- 流体回路のライン -->
+  <path d="M 200,300 Q 500,200 800,300 T 1400,300" stroke="#ffffff" stroke-width="8" fill="none" opacity="0.3"/>
+  <path d="M 300,500 Q 600,400 900,500 T 1500,500" stroke="#ffffff" stroke-width="8" fill="none" opacity="0.3"/>
+  <path d="M 100,700 Q 400,600 700,700 T 1300,700" stroke="#ffffff" stroke-width="8" fill="none" opacity="0.3"/>
+  
+  <!-- フィルター光のサークル -->
+  <circle cx="500" cy="300" r="80" fill="url(#dialysisGlow)" opacity="0.5"/>
+  <circle cx="900" cy="500" r="100" fill="url(#dialysisGlow)" opacity="0.4"/>
+  <circle cx="1400" cy="700" r="90" fill="url(#dialysisGlow)" opacity="0.3"/>
+  
+  <!-- 流体の泡 -->
+  <circle cx="300" cy="200" r="20" fill="#ffffff" opacity="0.4"/>
+  <circle cx="700" cy="400" r="30" fill="#ffffff" opacity="0.3"/>
+  <circle cx="1100" cy="600" r="25" fill="#ffffff" opacity="0.35"/>
+  <circle cx="1500" cy="300" r="18" fill="#ffffff" opacity="0.4"/>
+</svg>
